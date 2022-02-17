@@ -19,6 +19,13 @@ body {
     background-size: cover;
 }
 
+#rbteamlogo{
+    padding: 0px;
+    margin: 15px;
+
+
+}
+
 #Champion2021 {
     font-size: 40px;
     text-shadow: 2px 2px 2px rgb(2, 21, 168);
