@@ -18,6 +18,17 @@ body {
     z-index: -1;
     background-size: cover;
 }
+#bg-imagenextrace {
+    background-image: url(https://mocah.org/thumbs/1067805-sport-race-cars-car-Formula-1-Red-Bull-Racing-racing-Sebastian-Vettel-screenshot-computer-wallpaper-winter-sport.jpg);
+    /*  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSggmrp-C7qjnaq1f5n25TmnjL2Wvdv0Ibsw&usqp=CAU);*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;
+    background-size: cover;
+}
 
 #rbteamlogo{
     padding: 0px;
