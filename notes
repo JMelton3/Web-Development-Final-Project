@@ -6,6 +6,9 @@ Notes for the Project
 
     lat then long then date "YYYY-MM-DD"
 
+INSERT INTO f1 calander(round, raceName, latitude, longitude, date) VALUES ('1','Bahrain GP','26.0328479','50.5045561','2022-03-20')
+
+
 
 1. Bahrain
     26.066700
