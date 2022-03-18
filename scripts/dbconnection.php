@@ -3,7 +3,7 @@
     class DbConnection{
 
         private $DB_HOST = 'localhost';
-        private $DB_NAME = 'vehicle_db';
+        private $DB_NAME = 'portfolio';
         private $DB_USERNAME = 'root';
         private $D_PASSWORD = '';
 
