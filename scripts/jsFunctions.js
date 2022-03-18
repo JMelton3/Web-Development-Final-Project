@@ -51,3 +51,6 @@ function zipWeather(zipCode) {
 // url for lat and long http://api.openweathermap.org/geo/1.0/reverse?lat={lat}&lon={lon}&limit={limit}&appid={API key}
 
 // url for zip  https://api.openweathermap.org/data/2.5/weather?zip={zip code},{country code}&appid={API key}   
+
+
+//https://openweathermap.org/current#current_JSON
