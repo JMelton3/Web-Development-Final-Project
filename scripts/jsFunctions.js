@@ -1,16 +1,38 @@
 // Open Weather API call
 
-const todayWeatherCtn = document.querySelector('#todayWeatherCtn')
+const todayWeatherCtn = document.querySelector('#todayWeatherCtn');
+const checkWeatherBtn = document.querySelector('#checkWeatherBtn');
 
-$(document).ready(zipWeather("35244"))
-
-
+let zipCode = '35244' 
 let tempUnit = 'F'
+let tempType = 'imperial'
 
 
+$(document).ready(zipWeather(zipCode));
+
+
+
+
+
+
+function changeUnits(){
+    
+
+
+}
+
+
+
+checkWeatherBtn.onclick = function() {
+    
+    let zipInput = document.querySelector('#zipInput').value;
+    zipCode = zipInput;
+
+    zipWeather(zipCode)
+}
 
 function zipWeather(zipCode) {
-    let url = `https://api.openweathermap.org/data/2.5/weather?zip=${zipCode}&appid=5a046e91d1b54a6d7690f83d9ba1cfa4&units=imperial`;
+    let url = `https://api.openweathermap.org/data/2.5/weather?zip=${zipCode}&appid=5a046e91d1b54a6d7690f83d9ba1cfa4&units=${tempType}`;
     console.log(url)
     $.ajax({
         url: url,

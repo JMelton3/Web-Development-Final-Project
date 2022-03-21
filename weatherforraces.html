@@ -56,22 +56,24 @@
                 <div id="weatherBox">
                     <div id="weatherCtn" class="my-5">
                         <div class="row">
-                            <div class="col-12 col-xl-5 col-lg-5 col-md-6 col-sm-4">
-                                <input type="number" name="zipInput" id="zipInput" placeholder="Enter Your Zipcode Here"
-                                    class="align-center">
-                            </div>
-                            <div class="col-12 col-xl-5 col-lg-5 col-md-3 col-sm-4">
-                                <div class="row">
-                                    <div><span>C</span></div>
-                                    <div><span>F</span></div>
+                            <div class="col-12 col-xl-6 col-lg-4 col-md-12 col-sm-12 p-4 bg-info">
+                                <div class="col-12 col-xl-5 col-lg-5 col-md-6 col-sm-4">
+                                    <input type="number" name="zipInput" id="zipInput"
+                                        placeholder="Enter Your Zipcode Here" class="align-center">
+                                </div>
+                                <div class="col-12 col-xl-5 col-lg-5 col-md-3 col-sm-4">
+                                    <div class="row my-2 mx-1">
+                                        <div id="tempTypeF" class="col-6 fs-4 bg-dark text-light"><span>F</span></div>
+                                        <div id="tempTypeC" class="col-6 fs-4"><span>C</span></div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-xl-2 col-lg-2 col-md-3 col-sm-4">
+                                    <input type="button" value="Check Weather" name="checkWeatherBtn" id="checkWeatherBtn">
                                 </div>
                             </div>
-                            <div class="col-12 col-xl-2 col-lg-2 col-md-3 col-sm-4">
-                                <input type="button" value="Check Weather">
-                            </div>
-                        </div>
-                        <div class="row mt-5">
-                            <div id="todayWeatherCtn" class="col-6 text-center">
+                            
+                            
+                            <div id="todayWeatherCtn" class="col-12 col-xl-6 col-lg-8 col-md-12 col-sm-12 text-center">
                                 <div>
                                     <h3>Today's Weather</h3>
                                     <div class="row">
@@ -93,110 +95,58 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6">
-                                <h3>The Next 4 days</h3>
-                                <div class="row pb-3">
-                                    <div class="col-12 col-xl-2 col-lg-2 col-md-3 col-sm-12">
-                                        <span>Tuesday, Mar 15</span>
-                                    </div>
-                                    <div class="col-12 col-xl-2 col-lg-2 col-md-3 col-sm-12">
-                                        <span>57 / 47 F</span>
-                                    </div>
-                                    <div class="col-12 col-xl-2 col-lg-2 col-md-3 col-sm-12">
-                                        <span class=""> moderate Rain</span>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-4">
-                                        <span>Tuesday, Mar 15</span>
-                                    </div>
-                                    <div class="col-4">
-                                        <span>57 / 47 F</span>
-                                    </div>
-                                    <div class="col-4">
-                                        <span> moderate Rain</span>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-4">
-                                        <span>Tuesday, Mar 15</span>
-                                    </div>
-                                    <div class="col-4">
-                                        <span>57 / 47 F</span>
-                                    </div>
-                                    <div class="col-4">
-                                        <span> moderate Rain</span>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-4">
-                                        <span>Tuesday, Mar 15</span>
-                                    </div>
-                                    <div class="col-4">
-                                        <span>57 / 47 F</span>
-                                    </div>
-                                    <div class="col-4">
-                                        <span> moderate Rain</span>
-                                    </div>
-                                </div>
-
-
-
-
-
-
-
-                            </div>
+                        
+                        
                         </div>
-                    </div>
-                </div>
 
-
-                <div id="raceWeather">
-                    <div class="row">
-                        <div class="col-12 col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                            <div class="raceWeatherCtn">
-                                <div class="row text-center"><span>Round 1</span></div>
-                                <div class="row text-center my-1"><span>Bahrain GP</span></div>
-                                <div class="d-flex justify-content-center mt-1"><input type="button"
-                                        value="Check Weather" name="raceWeather"></div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                            <div class="raceWeatherCtn">
-                                <div class="row text-center"><span>Round 1</span></div>
-                                <div class="row text-center"><span>Bahrain GP</span></div>
-                                <div class="d-flex justify-content-center"><input type="button" value="Check Weather"
-                                        name="raceWeather"></div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                            <div class="raceWeatherCtn">
-                                <div class="row text-center"><span>Round 1</span></div>
-                                <div class="row text-center"><span>Bahrain GP</span></div>
-                                <div class="d-flex justify-content-center"><input type="button" value="Check Weather"
-                                        name="raceWeather"></div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-xl-3 col-lg-3 col-md-4 col-sm-6">
-                            <div class="raceWeatherCtn">
-                                <div class="row text-center"><span>Round 1</span></div>
-                                <div class="row text-center"><span>Bahrain GP</span></div>
-                                <div class="d-flex justify-content-center"><input type="button" value="Check Weather"
-                                        name="raceWeather"></div>
-                            </div>
-                        </div>
                     </div>
 
 
+                    <div id="raceWeather">
+                        <div class="row">
+                            <div class="col-12 col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                                <div class="raceWeatherCtn">
+                                    <div class="row text-center"><span>Round 1</span></div>
+                                    <div class="row text-center my-1"><span>Bahrain GP</span></div>
+                                    <div class="d-flex justify-content-center mt-1"><input type="button"
+                                            value="Check Weather" name="raceWeather"></div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                                <div class="raceWeatherCtn">
+                                    <div class="row text-center"><span>Round 1</span></div>
+                                    <div class="row text-center"><span>Bahrain GP</span></div>
+                                    <div class="d-flex justify-content-center"><input type="button"
+                                            value="Check Weather" name="raceWeather"></div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                                <div class="raceWeatherCtn">
+                                    <div class="row text-center"><span>Round 1</span></div>
+                                    <div class="row text-center"><span>Bahrain GP</span></div>
+                                    <div class="d-flex justify-content-center"><input type="button"
+                                            value="Check Weather" name="raceWeather"></div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xl-3 col-lg-3 col-md-4 col-sm-6">
+                                <div class="raceWeatherCtn">
+                                    <div class="row text-center"><span>Round 1</span></div>
+                                    <div class="row text-center"><span>Bahrain GP</span></div>
+                                    <div class="d-flex justify-content-center"><input type="button"
+                                            value="Check Weather" name="raceWeather"></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
 
 
                 </div>
-
-
             </div>
         </div>
-    </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
