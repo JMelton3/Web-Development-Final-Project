@@ -14,6 +14,7 @@
     z-index: -1;
     background-size: cover;
 }
+
 #bg-imagenextrace {
     /* background-image: url(https://mocah.org/thumbs/1067805-sport-race-cars-car-Formula-1-Red-Bull-Racing-racing-Sebastian-Vettel-screenshot-computer-wallpaper-winter-sport.jpg); */
     /*  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSggmrp-C7qjnaq1f5n25TmnjL2Wvdv0Ibsw&usqp=CAU);*/
@@ -26,7 +27,7 @@
     background-size: cover;
 }
 
-#rbteamlogo{
+#rbteamlogo {
     padding: 0px;
     margin: 15px;
 
@@ -43,14 +44,17 @@
     width: 100vw;
     overflow-y: auto;
 }
-#clock{
+
+#clock {
     border: solid grey 2px;
     width: 500px;
     font-size: 24px;
 }
-.timerinput{
+
+.timerinput {
     display: inline;
 }
+
 .statBox {
     background-color: #B2BEB540;
 }
@@ -64,20 +68,27 @@
     font-weight: 300;
     margin-top: 12px !important;
 }
-.rivalimg{
+
+.rivalimg {
     align-self: bottom !important;
     height: auto;
     width: 100%;
 }
-.comparePage{
+
+.comparePage {
     color: white;
 }
-.raceWeatherCtn{
+
+.raceWeatherCtn {
     background-color: grey;
     border: 2px solid black;
     padding: 8px 20px 20px 20px;
     margin: 10px;
     font-size: 20px;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 /*
@@ -89,9 +100,3 @@
     https://img.redbull.com/images/c_crop,x_695,y_0,h_4000,w_4444/c_fill,w_880,h_788/q_auto,f_auto/redbullcom/2022/2/16/wsqyjpmbnxzkxeva9f49/bybit-joins-the-charge
     https://img.redbull.com/images/c_crop,x_535,y_0,h_1080,w_810/c_fill,w_880,h_1168/q_auto,f_auto/redbullcom/2022/1/14/hf7th98vqwnbgjhbn6wq/rb18-launch-teaser
     https://www.icanvas.com/canvas-print/max-verstappen-red-bull-racing-rb16b-raceway-2021-f1-cars-formula-1-on-ssy126#1PC6-40x26&gid=1&pid=main-image
-
-
-
-
-
-

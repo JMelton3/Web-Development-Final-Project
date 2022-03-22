@@ -1,47 +1,74 @@
 // Open Weather API call
-
-const todayWeatherCtn = document.querySelector('#todayWeatherCtn');
-const checkWeatherBtn = document.querySelector('#checkWeatherBtn');
-
-let zipCode = '35244' 
-let tempUnit = 'F'
-let tempType = 'imperial'
+$(document).ready(function () {
 
 
-$(document).ready(zipWeather(zipCode));
+    const todayWeatherCtn = document.querySelector('#todayWeatherCtn');
+    const checkWeatherBtn = document.querySelector('#checkWeatherBtn');
+
+    let zipCode = '35244';
+    let tempUnit = 'F';
+    let tempType = 'imperial';
+
+    $('.tempUnit').click(changeUnits);
+
+    checkWeatherBtn.onclick = function () {
+        let zipInput = document.querySelector('#zipInput').value;
+
+        if (!$.isNumeric(zipInput)) {
+            alert('Please enter a valid zip code into the input field.')
+            return
+        }
+
+        zipCode = zipInput;
+        zipWeather();
+    }
+
+    $('.raceWeatherBtn').click(function () {
+        let lat = $(this).data('latitude');
+        let long = $(this).data('longitude');
+        latLongWeather(lat, long);
+    });
 
 
 
 
+    function changeUnits() {
+        switch (tempUnit) {
+            case 'F':
+                tempType = 'metric';
+                tempUnit = 'C';
+                break;
+            case 'C':
+                tempType = 'imperial';
+                tempUnit = 'F';
+                break;
+        }
+
+        $('.tempUnit').toggleClass('bg-dark text-light');
+    }
 
 
-function changeUnits(){
-    
+    function zipWeather() {
+        let url = `https://api.openweathermap.org/data/2.5/weather?zip=${zipCode}&appid=5a046e91d1b54a6d7690f83d9ba1cfa4&units=${tempType}`;
+        callApi(url);
+    }
 
+    function latLongWeather(lat, long) {
+        let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=5a046e91d1b54a6d7690f83d9ba1cfa4&units=${tempType}`;
+        callApi(url);
+    }
 
-}
+    function callApi(url) {
+        $.ajax({
+            url: url,
+            type: 'GET',
+            success: function (res) {
+                let name = res.name;
+                if (res.sys.country) name += ', ' + res.sys.country
 
-
-
-checkWeatherBtn.onclick = function() {
-    
-    let zipInput = document.querySelector('#zipInput').value;
-    zipCode = zipInput;
-
-    zipWeather(zipCode)
-}
-
-function zipWeather(zipCode) {
-    let url = `https://api.openweathermap.org/data/2.5/weather?zip=${zipCode}&appid=5a046e91d1b54a6d7690f83d9ba1cfa4&units=${tempType}`;
-    console.log(url)
-    $.ajax({
-        url: url,
-        type: 'GET',
-        success: function (response) {
-            let res = response;
-            let output = (`
+                let output = (`
                     <div class="col-6 text-center">
-                        <h3> Today's Weather in ${res.name} </h3>
+                        <h3> Today's Weather in ${name}</h3>
                         <div class="row">
                             <div class="col-12"><span>${res.main.temp} ${tempUnit}</span></div>
                         </div>
@@ -60,19 +87,26 @@ function zipWeather(zipCode) {
                             <div class="col-12"><span class="fw-bold">Humidity:</span><span> ${res.main.humidity}%</span></div>
                         </div>
                     </div>`)
-            console.log(res)
-            todayWeatherCtn.innerHTML = output;
-        }
-    })
-
-}
-
+                console.log(res)
+                todayWeatherCtn.innerHTML = output;
+            }
+        })
+    }
 
 
 
-// url for lat and long http://api.openweathermap.org/geo/1.0/reverse?lat={lat}&lon={lon}&limit={limit}&appid={API key}
-
-// url for zip  https://api.openweathermap.org/data/2.5/weather?zip={zip code},{country code}&appid={API key}   
 
 
-//https://openweathermap.org/current#current_JSON
+
+
+
+
+    // url for lat and long https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
+
+    // url for zip  https://api.openweathermap.org/data/2.5/weather?zip={zip code},{country code}&appid={API key}   
+
+
+    //https://openweathermap.org/current#current_JSON
+
+    zipWeather()
+});

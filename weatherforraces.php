@@ -1,3 +1,25 @@
+<?php
+
+        
+    include('scripts/dbconnection.php');
+
+    $dbh = new Dbconnection();
+    $conn = $dbh->getConnection();
+
+    $sql = 'SELECT * FROM `f1_calendar`' ;
+
+    $stmnt = $conn->prepare($sql); //Prepare our query for submission
+    $stmnt->execute(); // Query is executed 
+    $results = $stmnt->fetchAll(); // Our query results are stored in the "$results" variable now
+
+
+
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -57,22 +79,27 @@
                     <div id="weatherCtn" class="my-5">
                         <div class="row">
                             <div class="col-12 col-xl-6 col-lg-4 col-md-12 col-sm-12 p-4 bg-info">
-                                <div class="col-12 col-xl-5 col-lg-5 col-md-6 col-sm-4">
-                                    <input type="number" name="zipInput" id="zipInput"
-                                        placeholder="Enter Your Zipcode Here" class="align-center">
-                                </div>
-                                <div class="col-12 col-xl-5 col-lg-5 col-md-3 col-sm-4">
-                                    <div class="row my-2 mx-1">
-                                        <div id="tempTypeF" class="col-6 fs-4 bg-dark text-light"><span>F</span></div>
-                                        <div id="tempTypeC" class="col-6 fs-4"><span>C</span></div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-6 mb-2">
+                                        <div class="d-flex justify-content-center">
+                                            <input type="text" name="zipInput" id="zipInput"
+                                                placeholder="Zip code" class="w-100">
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-lg-6 fs-4 text-center mb-2">
+                                        <div id="tempTypeF" class="tempUnit d-inline-block w-25 bg-dark text-light">
+                                            <span>F</span></div>
+                                        <div id="tempTypeC" class="tempUnit d-inline-block w-25"><span>C</span></div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="d-flex justify-content-center">
+                                            <input type="button" value="Check Weather" name="checkWeatherBtn"
+                                                id="checkWeatherBtn" class="p-2">
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-xl-2 col-lg-2 col-md-3 col-sm-4">
-                                    <input type="button" value="Check Weather" name="checkWeatherBtn" id="checkWeatherBtn">
-                                </div>
                             </div>
-                            
-                            
+
                             <div id="todayWeatherCtn" class="col-12 col-xl-6 col-lg-8 col-md-12 col-sm-12 text-center">
                                 <div>
                                     <h3>Today's Weather</h3>
@@ -95,8 +122,8 @@
                                     </div>
                                 </div>
                             </div>
-                        
-                        
+
+
                         </div>
 
                     </div>
@@ -104,6 +131,24 @@
 
                     <div id="raceWeather">
                         <div class="row">
+                        <?php
+                            foreach($results as $result){
+                                echo '
+                                <div class="col-12 col-xl-3 col-lg-3 col-md-4 col-sm-6 mb-1">
+                                    <div class="raceWeatherCtn">
+                                        <div class="text-center"><span>Round ' . $result->round . '</span></div>
+                                        <div class="text-center"><span>' . $result->raceName . '</span></div>
+                                        <div class="d-flex justify-content-center">
+                                            <button type="button" class="raceWeatherBtn" data-latitude="' . $result->latitude .'" data-longitude="' . $result->longitude .'">Check Weather</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                ';
+                            };
+                        ?>
+                        </div>
+                        <!-- <div class="row">
                             <div class="col-12 col-xl-3 col-lg-3 col-md-4 col-sm-6">
                                 <div class="raceWeatherCtn">
                                     <div class="row text-center"><span>Round 1</span></div>
@@ -135,9 +180,9 @@
                                     <div class="d-flex justify-content-center"><input type="button"
                                             value="Check Weather" name="raceWeather"></div>
                                 </div>
-                            </div>
+                            </div> 
                         </div>
-
+                        -->
 
 
 
