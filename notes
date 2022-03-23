@@ -1,6 +1,27 @@
 Notes for the Project
 
 
+Final Presentation Rubric: Portfolio WebsiteThe following document has been created to provide guidance for your final presentation. As a student of theFull  Stack Web Development with PHP course, you will demonstrate a culmination of everything you havelearned by  producing a Portfolio style website as a final project.
+1. Your portfolio must be designed using HTML5, CSS, and JavaScript as your frontenddevelopment languages, coupled with MySQL as your database, and PHP as your backendserver-side language.
+2. All HTML tags used must be properly structured to create a nice cohesive webpage, whileusing CSS3 to style, layout, and create a responsive web design.
+3. JavaScript must be used to create interaction within the website. It can be used to show errorin form input as well as display dynamic content, such as date and time or some otherinformation at the developer’s discretion. Use AJAX to demonstrate use of remote content.
+4. MySQL must be used to house some portion or amount of data and/or resources being broughtinto the website. These items can be content data, input data that is being retrieved, or siteconfiguration data.
+5. PHP is expected to be used for the sake of communicating with the database for ALL CRUDoperations. Various PHP functions should be used to show your knowledge of PHP. Functionssuch as the include function, array methods, and so on are a few suggested options. Loops areexpected to be seen in your code as well.
+
+Portfolio Page Sections Required:
+
+Header
+Masthead/Hero Area (Optional)
+Call To Action (CTA)
+Social Media and Source Code Repository Icons
+Bio Section with a Profile Photo
+Placeholder Images for content (if necessary)
+Recent Works
+Short contact form with submission capability (submission to Db is acceptable)
+Footer with copyright content
+
+
+
 // Schedule for F1 race
 
 
