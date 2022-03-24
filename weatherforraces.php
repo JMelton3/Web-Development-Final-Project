@@ -78,7 +78,7 @@
                 <div id="weatherBox">
                     <div id="weatherCtn" class="my-5">
                         <div class="row">
-                            <div class="col-12 col-xl-6 col-lg-4 col-md-12 col-sm-12 p-4 bg-info">
+                            <div class="col-12 col-lg-4 col-md-4 col-sm-12 p-4 bg-info">
                                 <div class="row">
                                     <div class="col-12 col-lg-6 mb-2">
                                         <div class="d-flex justify-content-center">
@@ -100,7 +100,7 @@
                                 </div>
                             </div>
 
-                            <div id="todayWeatherCtn" class="col-12 col-xl-6 col-lg-8 col-md-12 col-sm-12 text-center">
+                            <div id="todayWeatherCtn" class="col-12 col-lg-8 col-md-8 col-sm-12 text-center">
                                 <div>
                                     <h3>Today's Weather</h3>
                                     <div class="row">

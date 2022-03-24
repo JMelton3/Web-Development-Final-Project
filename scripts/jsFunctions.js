@@ -67,10 +67,10 @@ $(document).ready(function () {
                 if (res.sys.country) name += ', ' + res.sys.country
 
                 let output = (`
-                    <div class="col-6 text-center">
+                    <div class="text-center">
                         <h3> Today's Weather in ${name}</h3>
                         <div class="row">
-                            <div class="col-12"><span>${res.main.temp} ${tempUnit}</span></div>
+                            <div class="col-12"><span class="fs-4 fw-bold">${res.main.temp} ${tempUnit}</span></div>
                         </div>
                         <div class="row">
                             <div class="col-12"><span class="text-capitalize">${res.weather[0].description}</span></div>
