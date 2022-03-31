@@ -202,6 +202,9 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="scripts/jsFunctions.js"></script>
 
+    <!--This is the js to call the openwether api call -->
+    <script src="...srcripts/weatherjs.js"></script>
+    
 </body>
 
 </html>
