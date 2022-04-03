@@ -41,7 +41,7 @@ $(document).ready(function () {
                 break;
         }
 
-        $('.tempUnit').toggleClass('bg-dark text-light');
+        $('.tempUnit').toggleClass('activeTemp text-light');
     }
 
 

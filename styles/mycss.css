@@ -3,9 +3,12 @@
     /* color: white*/
 }
 
+body {
+    background-color: #68BBE3;
+}
+
 #bg-image {
     background-image: url(https://images.unsplash.com/photo-1625052164923-bc7520ec4555?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
-    /*  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSggmrp-C7qjnaq1f5n25TmnjL2Wvdv0Ibsw&usqp=CAU);*/
     position: absolute;
     top: 0;
     left: 0;
@@ -16,23 +19,10 @@
     background-size: cover;
 }
 
-#bg-imagenextrace {
-    /* background-image: url(https://mocah.org/thumbs/1067805-sport-race-cars-car-Formula-1-Red-Bull-Racing-racing-Sebastian-Vettel-screenshot-computer-wallpaper-winter-sport.jpg); */
-    /*  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSggmrp-C7qjnaq1f5n25TmnjL2Wvdv0Ibsw&usqp=CAU);*/
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    z-index: -1;
-    background-size: cover;
-}
 
 #rbteamlogo {
     padding: 0px;
     margin: 15px;
-
-
 }
 
 #Champion2021 {
@@ -41,15 +31,27 @@
 }
 
 #pagewrapper {
-    height: 100vh;
+    height: calc(100vh - 60px);
     width: 100vw;
     max-width: 100%;
     overflow-y: auto;
+    margin-bottom: -60px;
 }
 
 #aboutMeHeader {
     font-size: 36px;
 }
+
+#weatherForm,
+#aboutMeCtn {
+    background-color: #003060;
+    color: white;
+}
+
+.indented {
+    text-indent: 20px;
+}
+
 .footer {
     position: absolute;
     bottom: 0;
@@ -58,11 +60,17 @@
     line-height: 60px;
 }
 
-.carousel-item,
-img {
-    max-height: 60vh;
+.imgContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.imgContainer img {
+    height: 30vh;
     width: auto;
-    justify-items: center;
+    padding-top: 15px;
 }
 
 .statBox {
@@ -101,12 +109,6 @@ img {
     justify-content: space-around;
 }
 
-/*
-    Possible new BackGround image Red Bull
-
-    https://img.redbull.com/images/c_fill,g_auto,w_1920,h_960/q_auto,f_auto/redbullcom/2022/2/9/eyrn2g8jjtajrrofnati/say-hello-to-the-rb18
-    https://img.redbull.com/images/c_crop,x_1349,y_0,h_3648,w_2736/c_fill,w_880,h_1168/q_auto,f_auto/redbullcom/2021/5/23/ilbkzr9ybxn1e27mpmmz/max-verstappen-wins-monaco-gp
-    https://img.redbull.com/images/c_crop,x_797,y_0,h_2022,w_1516/c_fill,w_880,h_1168/q_auto,f_auto/redbullcom/2021/6/9/ecvgk1pl4turvoxzbypc/film-castle-to-castle
-    https://img.redbull.com/images/c_crop,x_695,y_0,h_4000,w_4444/c_fill,w_880,h_788/q_auto,f_auto/redbullcom/2022/2/16/wsqyjpmbnxzkxeva9f49/bybit-joins-the-charge
-    https://img.redbull.com/images/c_crop,x_535,y_0,h_1080,w_810/c_fill,w_880,h_1168/q_auto,f_auto/redbullcom/2022/1/14/hf7th98vqwnbgjhbn6wq/rb18-launch-teaser
-    https://www.icanvas.com/canvas-print/max-verstappen-red-bull-racing-rb16b-raceway-2021-f1-cars-formula-1-on-ssy126#1PC6-40x26&gid=1&pid=    -image
+.activeTemp {
+    border-bottom: 4px solid black;
+}
