@@ -29,26 +29,15 @@
                     <img src="https://www.fillmurray.com/250/250" alt="random image" id="aboutMePhoto"
                         class="float-start pe-3">
                     <div class="p-4">
-                        <p class="indented mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis soluta
-                            consequatur, commodi
-                            explicabo cupiditate molestias nemo ducimus accusantium odit exercitationem magni ab
-                            architecto
-                            ratione hic iusto et deserunt, molestiae fugiat corporis eum blanditiis quasi! Vel quis,
-                            possimus sequi est tempore incidunt maiores quisquam fugiat odio amet a nemo illum ratione
-                            repellendus, mollitia facilis quidem necessitatibus ad, accusantium dolor similique maxime
-                            quae!
-                            Magnam dignissimos quos minima quasi impedit ea, natus in sunt debitis, dolores, veritatis
-                            quidem?</p>
-                        <p class="indented">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis soluta
-                            consequatur, commodi
-                            explicabo cupiditate molestias nemo ducimus accusantium odit exercitationem magni ab
-                            architecto
-                            ratione hic iusto et deserunt, molestiae fugiat corporis eum blanditiis quasi! Vel quis,
-                            possimus sequi est tempore incidunt maiores quisquam fugiat odio amet a nemo illum ratione
-                            repellendus, mollitia facilis quidem necessitatibus ad, accusantium dolor similique maxime
-                            quae!
-                            Magnam dignissimos quos minima quasi impedit ea, natus in sunt debitis, dolores, veritatis
-                            quidem?</p>
+                        <p class="indented mb-3">
+                            Hello my name is John Melton and thank you for visiting my site. I am 26 years old and I am married to my beautiful wife Kristin. My wife and I have one daughter together name Harper. My daughter is very important to my life and it has been so amazing to see how she has changed my life for the better. Kristin and I meet 8 years ago and we have been in love ever since. We were so happy when 2 years ago we were blessed with our beautiful daughter Harper. She has been an amazing addition to our lives adn we thank god for her every day.</p>
+                        <p class="indented mb-3">
+                            After finishing high school I immediatly fell in love with cooking and was able to take that passion for cooking and start a career as a chef. I loved being able to create something amazing from basic ingrediates and I loved the freedom of being able to develop recipes. While I love being a chef I was worried about how much time I was about to spend with my family. I decided to go train as a paramedic so that I could help the community I grew up in. I loved being able to constantly meet new people and being able to help people in a time of need was something that I felt called to do. I had learned first aid as a boy scout and I was able to put those skills and more to good use as a paramedic. </p>
+                        <p class="indented mb-3">
+                            Unfortunatly the day my paramedic liscense came in the mail I was involved in a car accident that resulted in me breaking my hip and arm as well as some burns to my legs. It has been a long road but after 3 years of recovery I am doing better and I am able to live a normal life. I am able to mostly do my job as a paramedic but I am not sure about how long I will be able to be a paramedic.</p>
+                        <p class="indented">
+                            Honestly at first I was timid about starting a third career in web development. After all the schooling I had done I would basically be starting over with web development; however, once I started learning I could start to see how similar it was to my previous careers. I was able to create something from nothing and I can help people in my communinty by creating websites for them. Learning to code and program has been an amazing experiance and I am excited for my future career. Being able to start with no true experiance with computers to being able to create this website and understand code has me excited for the future. I am also encouraged by how much more I have to learn and I am motivated to continue my edjucation. Again thank you for taking the time to read about me and If you would like to get in contact with me please message me below.
+                        </p>
                     </div>
                 </div>
                 <div class="my-5">
