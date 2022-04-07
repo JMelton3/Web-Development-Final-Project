@@ -18,8 +18,6 @@
 
 ?>
 
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -66,36 +64,10 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div id="todayWeatherCtn" class="col-12 col-lg-8 col-md-8 col-sm-12 text-center">
-                                <div>
-                                    <h3>Today's Weather</h3>
-                                    <div class="row">
-                                        <div class="col-12"><span>88 F</span></div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12"><span>Light Rain</span></div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <span>High: 95 F</span>
-                                        </div>
-                                        <div class="col-6">
-                                            <span>Low: 74 F</span>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12"><span>Humidity: 10%</span></div>
-                                    </div>
-                                </div>
                             </div>
-
-
                         </div>
-
                     </div>
-
-
                     <div id="raceWeather">
                         <div class="row">
                         <?php
@@ -114,8 +86,7 @@
                                 ';
                             };
                         ?>
-                        </div>
-                        
+                        </div>                        
                     </div>
                 </div>
             </div>
@@ -125,7 +96,7 @@
     <?php
         include('components/footer.php');
     ?>
-    
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>

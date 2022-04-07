@@ -28,7 +28,7 @@
     $stmnt->closeCursor(); 
     $conn = null;
 
-    //header('location: ../index.php');
+    header('location: ../contactme.php');
 ?>
 
 <div>

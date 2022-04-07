@@ -26,7 +26,7 @@
                 </div>            
                 <h3 id="aboutMeHeader" class="mt-3 mb-4 text-center">About Me</h3>
                 <div id="aboutMeCtn" class="mb-4 mx-2">
-                    <img src="img/meAndHarper.jpg" alt="random image" id="aboutMePhoto"
+                    <img src="img/meAndHarper.jpg" alt="me and my daughter" id="aboutMePhoto"
                         class="float-start pe-3">
                     <div class="p-4">
                         <p class="indented mb-3">
@@ -46,7 +46,7 @@
                 <h2 id="contactMe" class="text-center mt-5">Contact Me</h2>
                 <div id="formWrapper" class="mb-5 mx-2">
                     <form method="POST" action="scripts/success.php">
-                        <!--add a new action page -->
+
                         <div class="mt-5 mb-4">
                             <div class="contactFormInput">
                                 <input type="text" placeholder="Your Name" name="visitor_name" id="visitor_name" class="d-block " />
@@ -56,11 +56,7 @@
                             </div>
                         </div>
                         <div>
-                            <textarea class="form-control" name="contact_message" id="contact_message" rows="3"
-                                placeholder="Enter your message here" maxlength="255"></textarea>
-                            <!-- <div id="contactFormAlertBox">
-                                <span id="contactFormAlert"></span>
-                            </div> -->
+                            <textarea class="form-control" name="contact_message" id="contact_message" rows="3">
                             <input id="submitcontactform" type="submit" class="d-block mt-4"
                                 value="Send Your Feedback" />
                         </div>

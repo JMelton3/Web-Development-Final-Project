@@ -23,14 +23,15 @@
                 <div class="p-5 mt-4 bg-light rounded-3">
                     <div class="container-fluid py-5">
                         <h4>Welcome To My Page</h4>
-                        <p>Hello my name is John Melton and thank you for visiting my page. Click on my links to explore the page.
+                        <p>Hello my name is John Melton and thank you for visiting my page. Click on my links to explore
+                            the page.
                         </p>
-
-
-                        <button class="btn btn-primary btn-lg" type="button" onclick="window.location.href='maxverstappen.php' ">F1 Stats</button>
-                        <button class="btn btn-primary btn-lg" type="button" onclick="window.location.href='weatherforraces.php' ">Weather</button>
-                        <button class="btn btn-primary btn-lg" type="button" onclick="window.location.href='contactme.php' ">About Me</button>
-                        
+                        <button class="btn btn-primary btn-lg" type="button"
+                            onclick="window.location.href='maxverstappen.php' ">F1 Stats</button>
+                        <button class="btn btn-primary btn-lg" type="button"
+                            onclick="window.location.href='weatherforraces.php' ">Weather</button>
+                        <button class="btn btn-primary btn-lg" type="button"
+                            onclick="window.location.href='contactme.php' ">About Me</button>
                     </div>
                 </div>
             </div>
