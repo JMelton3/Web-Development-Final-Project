@@ -16,7 +16,6 @@ $(document).ready(function () {
             alert('Please enter a valid zip code into the input field.')
             return
         }
-
         zipCode = zipInput;
         zipWeather();
     }
@@ -40,7 +39,6 @@ $(document).ready(function () {
         }
         $('.tempUnit').toggleClass('activeTemp text-light');
     }
-
 
     function zipWeather() {
         let url = `https://api.openweathermap.org/data/2.5/weather?zip=${zipCode}&appid=5a046e91d1b54a6d7690f83d9ba1cfa4&units=${tempType}`;
