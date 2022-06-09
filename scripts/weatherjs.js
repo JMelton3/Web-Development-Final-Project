@@ -1,10 +1,8 @@
 // Open Weather API call
 $(document).ready(function () {
 
-
     const todayWeatherCtn = document.querySelector('#todayWeatherCtn');
     const checkWeatherBtn = document.querySelector('#checkWeatherBtn');
-
     let zipCode = '35244';
     let tempUnit = 'F';
     let tempType = 'imperial';
@@ -40,7 +38,6 @@ $(document).ready(function () {
                 tempUnit = 'F';
                 break;
         }
-
         $('.tempUnit').toggleClass('activeTemp text-light');
     }
 
@@ -89,10 +86,8 @@ $(document).ready(function () {
             }
         })
     }
-
     // url for lat and long https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
     // url for zip  https://api.openweathermap.org/data/2.5/weather?zip={zip code},{country code}&appid={API key}   
     //https://openweathermap.org/current#current_JSON
-
     zipWeather()
 });

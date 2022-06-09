@@ -9,9 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/mycss.css">
-
 </head>
-
 <body>
     <div id="bg-imagenextrace"></div>
     <div id="pagewrapper">
@@ -42,7 +40,6 @@
                 </div>
                 <div class="my-5">
                 </div>
-
                 <h2 id="contactMe" class="text-center mt-5">Contact Me</h2>
                 <div id="formWrapper" class="mb-5 mx-2">
                     <form method="POST" action="scripts/success.php">
@@ -76,7 +73,5 @@
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="scripts/jsFunctions.js"></script>
-
 </body>
-
 </html>

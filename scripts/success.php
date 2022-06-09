@@ -1,5 +1,4 @@
 <?php
-
     include('dbconnection.php');
 
     $dbh = new Dbconnection();
@@ -9,11 +8,9 @@
     $visitor_email = $_POST['visitor_email'];
     $contact_message = $_POST['contact_message'];
 
-
     $sql = 'INSERT INTO `contact_form`(visitor_name,visitor_email,contact_message) VALUES (
         :visitor_name, :visitor_email, :contact_message
     )';
-
 
     $stmnt = $conn->prepare($sql); 
     

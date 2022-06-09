@@ -1,26 +1,14 @@
 <?php
-
-        
     include('scripts/dbconnection.php');
-
     $dbh = new Dbconnection();
     $conn = $dbh->getConnection();
-
     $sql = 'SELECT * FROM `f1_calendar`' ;
-
-    $stmnt = $conn->prepare($sql); //Prepare our query for submission
-    $stmnt->execute(); // Query is executed 
-    $results = $stmnt->fetchAll(); // Our query results are stored in the "$results" variable now
-
-
-
-
-
+    $stmnt = $conn->prepare($sql);
+    $stmnt->execute();
+    $results = $stmnt->fetchAll();
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -29,9 +17,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/mycss.css">
-
 </head>
-
 <body>
     <div id="bg-imagenextrace"></div>
     <div id="pagewrapper">
@@ -71,6 +57,8 @@
                     <div id="raceWeather">
                         <div class="row">
                         <?php
+                            // This does a pull from an external database and displays the weather for each race based on 
+                                // the longitude and latitude of where the race is located
                             foreach($results as $result){
                                 echo '
                                 <div class="col-12 col-xl-3 col-lg-3 col-md-4 col-sm-6 mb-1">
@@ -92,11 +80,9 @@
             </div>
         </div>
     </div>
-
     <?php
         include('components/footer.php');
     ?>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
@@ -104,10 +90,7 @@
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="scripts/jsFunctions.js"></script>
-
     <!--This is the js to call the openwether api call -->
-    <script src="scripts/weatherjs.js"></script>
-    
+    <script src="scripts/weatherjs.js"></script>    
 </body>
-
 </html>

@@ -1,5 +1,4 @@
 <?php
-
     class DbConnection{
 
         private $DB_HOST = 'localhost';
